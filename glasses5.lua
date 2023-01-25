@@ -296,7 +296,7 @@ function PrintMessageOnMonitor(playerName, msg, messageType, pos, time)
    gpu.setForeground(Ox00FFO0)
    io.write(playerName)
    gpu.setForeground(OxFFFFFF)
-   io.write:(": ")
+   io.write(": ")
    WriteMessage(msg)
    io.write("\n")
 end
