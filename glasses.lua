@@ -11,7 +11,7 @@ json = require("json")
 
 url = ""
 
-local = 1
+Local = 1
 Global = 2
 Other = 3
 
