@@ -55,7 +55,7 @@ local function getDate()
 end
 
 local function UpdateUrl()
-   url = "https://logs1.shadowcraft.ru/Hitech_public_logs/" .. getDate() .. ".txt"
+   url = "https://logs23.mcskill.net/Hitechcraft2_public_logs/" .. getDate() .. ".txt"
 end
 
 buff = {}
@@ -144,10 +144,10 @@ function GetMessageDetails(text)
    local messageType = Other
    local playerName = ""
    local messageIndex = 0
-   if (LorG == “[L]") then
+   if (LorG == "[L]") then
       messageType = Local
    end
-   if (LorG == “[G]") then
+   if (LorG == "[G]") then
       messageType = Global
    end
    
@@ -286,11 +286,11 @@ function PrintMessageOnMonitor(playerName, msg, messageType, pos, time)
    else
       if (messageType == Local) then
          gpu.setForeground(OxFFFFFF)
-         io.write(“[L] “)
+         io.write("[L] ")
       else
          msg = msg:sub(2)
          gpu.setForeground(OxFF9933)
-         io.write(“[G] “)
+         io.write("[G] ")
       end
    end
    gpu.setForeground(Ox00FFO0)
