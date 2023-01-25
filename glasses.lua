@@ -28,6 +28,7 @@ local function GetChunk(startInd, endInd)
    return result
 end
 
+
 local function GetLengthOnServer()
    local req = internet.request(url)
    os.sleep(0.1)
