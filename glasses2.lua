@@ -191,8 +191,8 @@ function split(str,pat)
       local fpat = "(.-)" .. pat
       local last_end = 1
       local s, e, cap = str:find(fpat, 1)
-      while do
-         if s ~=1 or cap ~="" then
+      while s do
+         if s ~=1 or cap ~= "" then
             table.insert(t,cap)
          end
          last_end = e + 1
