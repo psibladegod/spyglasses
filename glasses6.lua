@@ -67,11 +67,9 @@ local function addBuff(body)
          return
       end
    end
-
    for i = 1, 9, 1 do
       buff[i] = buff[i + 1];
    end
-
    buff[10] = body
 end
 
