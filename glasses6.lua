@@ -106,8 +106,10 @@ local function DrawOnGlasses(body)
       if (buff[i] == nil) then
          break
       end
-
-      bridge.addText(5, 2 + 10 * i, buff[i], OxFFFFFF)
+      local unc = require ('unicode')
+      local len = unc .len(buff[i])
+      bridge.addBox(5, 2 + 10 * i, 5.5 * len, 8, Ox000000,0.6)
+      bridge.addText(5, 2 + 10 * i, buff[i], Ox5100ff)
    end
    bridge.sync()
 end
