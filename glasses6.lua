@@ -108,8 +108,8 @@ local function DrawOnGlasses(body)
       end
       local unc = require ('unicode')
       local len = unc .len(buff[i])
-      bridge.addBox(5, 2 + 10 * i, 5.5 * len, 8, Ox000000,0.6)
-      bridge.addText(5, 2 + 10 * i, buff[i], Ox5100ff)
+      bridge.addBox(5, 2 + 10 * i, 5.5 * len, 8, 0x000000,0.6)
+      bridge.addText(5, 2 + 10 * i, buff[i], 0x44d929)
    end
    bridge.sync()
 end
